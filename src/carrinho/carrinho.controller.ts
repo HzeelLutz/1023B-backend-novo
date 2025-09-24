@@ -41,5 +41,13 @@ class CarrinhoController {
     //listar
     //remover                -> Remover o carrinho todo
 
+    async listar(req:Request, res:Response) {
+        // Listar todos os carrinhos
+    }  
+
+    async adicionar(req:Request, res:Response) {
+        // Adicionar um novo carrinho
+    }
+
 }
 export default new CarrinhoController();
