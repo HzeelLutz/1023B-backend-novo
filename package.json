@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/index-mongo.ts",
     "dev:mongo": "tsx watch src/index-mongo.ts",
     "build": "npm install && tsc",
     "start": "node dist/index-mongo.js",

@@ -13,5 +13,8 @@ const rotas = Router()
 rotas.get('/produtos',produtosController.listar)
 rotas.post('/produtos',produtosController.adicionar)
 
+rotas.post('/adicionarItem',carrinhoController.adicionarItem)
+
 
 export default rotas
+
