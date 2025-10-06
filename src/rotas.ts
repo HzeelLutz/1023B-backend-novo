@@ -2,6 +2,7 @@ import {Router} from 'express'
 
 import carrinhoController from './carrinho/carrinho.controller.js'
 import produtosController from './produtos/produtos.controller.js'
+import usuariosController from './usuarios/usuarios.controller.js'
 
 const rotas = Router()
 
@@ -12,8 +13,11 @@ const rotas = Router()
 // Rotas dos produtos
 rotas.get('/produtos',produtosController.listar)
 rotas.post('/produtos',produtosController.adicionar)
-
 rotas.post('/adicionarItem',carrinhoController.adicionarItem)
+
+// Rotas dos usuários
+rotas.post('/adicionarUsuario',usuariosController.adicionar)
+rotas.post('/login',usuariosController.login)
 
 
 export default rotas
