@@ -6,7 +6,7 @@ import usuariosController from '../usuarios/usuarios.controller.js'
 const rotas = Router()
 
 // Rotas dos produtos
-rotas.get('/produtos',produtosController.listar)
+
 
 // Rotas dos usuários
 rotas.post('/adicionarUsuario',usuariosController.adicionar)

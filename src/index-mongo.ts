@@ -12,7 +12,9 @@ app.use(express.json())
 
 // Usando as rotas definidas em rotas.ts
 // Usando o middleware de autenticação
-app.use(Auth,rotasAutenticadas)
+app.use(rotasNaoAutenticadas)
+app.use(Auth)
+app.use(rotasAutenticadas)
 
 //Não usando o middleware de autenticação
 app.use(rotasNaoAutenticadas)
